@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>AWS Athena — DML Queries</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">AWS Athena — DML查询</h1>
+<blockquote>原文：<a href="https://medium.com/analytics-vidhya/aws-athena-dml-queries-3d18ed0ab888?source=collection_archive---------9-----------------------#2020-07-07">https://medium.com/analytics-vidhya/aws-athena-dml-queries-3d18ed0ab888?source=collection_archive---------9-----------------------#2020-07-07</a></blockquote><div><div class="ds hc hd he hf hg"/><div class="hh hi hj hk hl"><div class=""/><p id="36ae" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">每天都可以学到新东西，今天我了解到AWS Athena支持插入查询。</p><pre class="jj jk jl jm fd jn jo jp jq aw jr bi"><span id="92a9" class="js jt ho jo b fi ju jv l jw jx">SELECT *<br/>FROM   information_schema.columns<br/>WHERE  table_schema = 'marvel'<br/>       AND table_name = 'marvel_superheroes'</span></pre><figure class="jj jk jl jm fd jz er es paragraph-image"><div class="er es jy"><img src="../Images/2d6904256e1611e180dfc9c8e5d4c036.png" data-original-src="https://miro.medium.com/v2/resize:fit:1400/0*VbsaY0EpV4nNGcR7"/></div></figure><p id="6c56" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">让我们使用CTAS命令创建基于漫威超级英雄的表格</p><pre class="jj jk jl jm fd jn jo jp jq aw jr bi"><span id="3d64" class="js jt ho jo b fi ju jv l jw jx"># To create non-partitioned table based on where clause</span></pre></div></div>    
+</body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Interacting with a Windows Share from Linux</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">从Linux与Windows共享交互</h1>
+<blockquote>原文：<a href="https://medium.com/analytics-vidhya/interacting-with-a-windows-share-from-linux-dc147e209c5b?source=collection_archive---------0-----------------------#2017-02-16">https://medium.com/analytics-vidhya/interacting-with-a-windows-share-from-linux-dc147e209c5b?source=collection_archive---------0-----------------------#2017-02-16</a></blockquote><div><div class="ds hc hd he hf hg"/><div class="hh hi hj hk hl"><div class=""/><p id="189e" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">问题:我需要在Linux文件系统和Windows文件共享之间传输文件。</p><p id="79dd" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">解决方案:使用<code class="du jj jk jl jm b">mount</code>和<code class="du jj jk jl jm b">smbclient</code>让事情运转起来。</p><pre class="jn jo jp jq fd jr jm js jt aw ju bi"><span id="ba53" class="jv jw ho jm b fi jx jy l jz ka">smbclient //host/share$ -U domain/user%password --max-protocol=SMB2_24 -c 'get backup\backup.txt backup/backup.txt'</span><span id="f634" class="jv jw ho jm b fi kb jy l jz ka">smbclient //host/share$ -U domain/user%password --max-protocol=SMB2_24 -c 'put backup/backup.txt backup\backup.txt'</span><span id="2910" class="jv jw ho jm b fi kb jy l jz ka">mount -t cifs //host/share$ /mnt/share -o username=user,domain=domain,vers=2.1</span></pre></div></div>    
+</body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Translating SQL queries to SQLALCHEMY ORM</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">将SQL查询转换为SQLALCHEMY ORM</h1>
+<blockquote>原文：<a href="https://medium.com/analytics-vidhya/translating-sql-queries-to-sqlalchemy-orm-a8603085762b?source=collection_archive---------7-----------------------#2020-06-28">https://medium.com/analytics-vidhya/translating-sql-queries-to-sqlalchemy-orm-a8603085762b?source=collection_archive---------7-----------------------#2020-06-28</a></blockquote><div><div class="ds hc hd he hf hg"/><div class="hh hi hj hk hl"><div class=""/><p id="7dc4" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">我用过很多SQL。直到最近，我在为公司开发管道时才开始使用SQLALCHEMY ORM。这是一个漂亮的python包，真的允许你模块化SQL查询。</p><p id="dab5" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">本文只是展示如何将常用的SQL查询转换成ORM的一种方式。让我们创建一些基本结构。</p><pre class="jj jk jl jm fd jn jo jp jq aw jr bi"><span id="2d6f" class="js jt ho jo b fi ju jv l jw jx">$ python -V<br/>Python 3.7.0</span><span id="6e1a" class="js jt ho jo b fi jy jv l jw jx">$ ipython</span><span id="22ef" class="js jt ho jo b fi jy jv l jw jx">In [<strong class="jo hp">1</strong>]: <strong class="jo hp">import</strong> <strong class="jo hp">sqlalchemy</strong><br/><br/>In [<strong class="jo hp">2</strong>]: sqlalchemy.__version__<br/>Out[<strong class="jo hp">2</strong>]: '1.3.17'<br/><br/>In [<strong class="jo hp">3</strong>]: <strong class="jo hp">from</strong> <strong class="jo hp">sqlalchemy</strong> <strong class="jo hp">import</strong> create_engine<br/><br/>In [<strong class="jo hp">4</strong>]…</span></pre></div></div>    
+</body>
+</html>

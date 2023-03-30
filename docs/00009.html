@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Testing API’s JSON Response in Django</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">在Django中测试API的JSON响应</h1>
+<blockquote>原文：<a href="https://medium.com/analytics-vidhya/testing-json-api-in-django-ad64c79253c?source=collection_archive---------0-----------------------#2017-03-24">https://medium.com/analytics-vidhya/testing-json-api-in-django-ad64c79253c?source=collection_archive---------0-----------------------#2017-03-24</a></blockquote><div><div class="ds hc hd he hf hg"/><div class="hh hi hj hk hl"><div class=""/><p id="4812" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">问题:我需要测试API端点的JSON响应。API端点遵循<a class="ae jj" href="http://jsonapi.org/" rel="noopener ugc nofollow" target="_blank"> JSON API规范</a>，使用<code class="du jk jl jm jn b">application/vnd.api+json</code>的<code class="du jk jl jm jn b">Content-Type</code>头，而不是内置<code class="du jk jl jm jn b"><a class="ae jj" href="https://docs.djangoproject.com/en/1.10/topics/testing/tools/#django.test.Response.json" rel="noopener ugc nofollow" target="_blank">.json()</a></code> <a class="ae jj" href="https://docs.djangoproject.com/en/1.10/topics/testing/tools/#django.test.Response.json" rel="noopener ugc nofollow" target="_blank">方法</a>所需的<code class="du jk jl jm jn b">application/json</code>。</p><p id="de85" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">解决方案:我找不到比手动将<code class="du jk jl jm jn b">response.content</code>解析成JSON对象更好的方式了。</p><pre class="jo jp jq jr fd js jn jt ju aw jv bi"><span id="097e" class="jw jx ho jn b fi jy jz l ka kb">import json<br/>self.assertEqual(<br/>  json.loads(response.content)['data'],<br/>  []<br/>)</span></pre><p id="aa53" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">注意:如果有某种方法允许<code class="du jk jl jm jn b">.json()</code>方法…</p></div></div>    
+</body>
+</html>

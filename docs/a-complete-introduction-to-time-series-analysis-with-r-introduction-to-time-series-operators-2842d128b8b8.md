@@ -1,0 +1,5 @@
+# 时间序列分析完全介绍(附 R)::时间序列算子介绍
+
+> 原文：<https://medium.com/analytics-vidhya/a-complete-introduction-to-time-series-analysis-with-r-introduction-to-time-series-operators-2842d128b8b8?source=collection_archive---------19----------------------->
+
+在[上一篇文章](/analytics-vidhya/a-complete-introduction-to-time-series-analysis-with-r-linear-processes-ii-c8135e5f690e?postPublishedType=repub)中，我们探讨了线性过程的一些有用的性质，包括 [**沃尔德表示定理**](/analytics-vidhya/a-complete-introduction-to-time-series-analysis-with-r-linear-processes-ii-c8135e5f690e?postPublishedType=repub) **，**以及一个非常有用的[刻画**任意**线性过程的自协方差函数](/analytics-vidhya/a-complete-introduction-to-time-series-analysis-with-r-linear-processes-ii-c8135e5f690e?postPublishedType=repub)。在本文中，我们将回退一点，了解到目前为止我们已经看到的不同的**操作符**，并给出一个简短的说明，说明这些操作符在处理涉及时间序列的复杂计算时是多么有用。如果你忘记了其中的一些，你可以看看…

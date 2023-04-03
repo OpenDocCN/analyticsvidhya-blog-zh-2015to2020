@@ -1,0 +1,5 @@
+# 时间序列分析完全介绍(带 R)::预测 1 →最佳预测者 I
+
+> 原文：<https://medium.com/analytics-vidhya/a-complete-introduction-to-time-series-analysis-with-r-tests-for-stationarity-prediction-1-a78c1cf16676?source=collection_archive---------23----------------------->
+
+我们走过了漫长的道路:从研究[模型到研究时间序列](/analytics-vidhya/a-complete-introduction-to-time-series-analysis-with-r-introduction-eef74f8f2ab3)、[平稳过程](/@hair.parra/a-complete-introduction-to-time-series-analysis-with-r-stationary-processes-4ab422ac7f6a)，如 [MA(1)](/@hair.parra/a-complete-introduction-to-time-series-analysis-with-r-stationary-processesiv-21bb484d8148) 和 [AR(1)](/analytics-vidhya/a-complete-introduction-to-time-series-analysis-with-r-stationary-processesiii-c0574bc913b) ，然后是[经典分解模型](/@hair.parra/a-complete-introduction-to-time-series-analysis-with-r-classical-decomposition-model-a4548a0c99b9)，再到[差分](/analytics-vidhya/a-complete-introduction-to-time-series-analysis-with-r-differencing-db94bc4df0ae)和[平稳性测试。但是我们实际上是如何做出预测的呢？？嗯，正如我的统计学教授所说“开始线性总是一个好主意”。所以这就是我们要做的！请注意，在本节中，我们将使用一些微积分和概率，因此，如果您需要复习概率，请查看这个概念复习工具…](/analytics-vidhya/a-complete-introduction-to-time-series-analysis-with-r-tests-for-stationarity-a8f1966a7c88)
